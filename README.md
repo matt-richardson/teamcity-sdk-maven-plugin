@@ -54,7 +54,7 @@ The plugin adds three simple goadls:
 * ```mvn tc-sdk:start``` will do the init check (see above), deploy your plugin to the distribution, and start TeamCity server and agent
 * ```mvn tc-sdk:stop``` will do the init check (once again) and will issue stop command to both server and agent.
 * ```mvn tc-sdk:reload``` will do the init check and will copy your plugin to the distribution. Can be useful to quickly deploy agent-side changes without need to restart the whole server, as TeamCity will automatically update the agent with new plugin version.
-* ```mvn tc-sdk:reloadResouces``` will do the init check and will copy over your static resources (from <plugin>-server/src/main/resouces/buildServerResources) to target teamcity server. May speedup ui development.
+* ```mvn tc-sdk:reloadResources``` will do the init check and will copy over your static resources (from <plugin>-server/src/main/resouces/buildServerResources) to target teamcity server. May speedup ui development.
 
 Please note, that TeamCity's startup process is not instant and stop command sent immediately after start may not be processed properly.
 
